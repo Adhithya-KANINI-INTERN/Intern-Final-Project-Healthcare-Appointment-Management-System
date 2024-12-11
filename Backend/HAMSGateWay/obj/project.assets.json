@@ -2895,11 +2895,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSGateWay\\HAMSGateWay.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSGateWay\\HAMSGateWay.csproj",
       "projectName": "HAMSGateWay",
-      "projectPath": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSGateWay\\HAMSGateWay.csproj",
+      "projectPath": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSGateWay\\HAMSGateWay.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSGateWay\\obj\\",
+      "outputPath": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSGateWay\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

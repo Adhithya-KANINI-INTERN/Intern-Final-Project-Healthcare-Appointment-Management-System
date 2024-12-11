@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HAMSGateWay")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a5e665e123fdfa712f6b2a3f8dfd467c43b019d")]
 [assembly: System.Reflection.AssemblyProductAttribute("HAMSGateWay")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HAMSGateWay")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
