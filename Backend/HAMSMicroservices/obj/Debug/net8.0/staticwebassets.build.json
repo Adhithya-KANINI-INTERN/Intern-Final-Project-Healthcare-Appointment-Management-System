@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "b5MMOUberYEvN6HH7PVlXD44KO4Dfl507LvX6zAcqUw=",
+  "Source": "HAMSMicroservices",
+  "BasePath": "_content/HAMSMicroservices",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,6 @@
+@HAMSMicroservices_HostAddress = http://localhost:5122
+
+GET {{HAMSMicroservices_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
