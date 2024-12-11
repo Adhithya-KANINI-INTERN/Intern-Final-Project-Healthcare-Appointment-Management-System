@@ -183,6 +183,6 @@ namespace UserService.Services
                 return false;
             }
         }
-        //git checkk
+        //git check purpose
     }
 }
