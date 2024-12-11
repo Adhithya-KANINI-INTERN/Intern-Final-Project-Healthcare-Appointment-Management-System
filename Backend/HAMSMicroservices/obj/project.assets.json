@@ -2895,11 +2895,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\HAMSMicroservices.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\HAMSMicroservices.csproj",
       "projectName": "HAMSMicroservices",
-      "projectPath": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\HAMSMicroservices.csproj",
+      "projectPath": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\HAMSMicroservices.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\obj\\",
+      "outputPath": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
