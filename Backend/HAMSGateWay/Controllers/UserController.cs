@@ -1,12 +1,12 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using HAMSGateWay.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using UserService.DTOs;
-using UserService.Models;
-using UserService.Services.Interfaces;
+using HAMSGateWay.Models;
+using HAMSGateWay.Services.Interfaces;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace UserService.Controllers
+namespace HAMSGateWay.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -20,13 +20,38 @@ namespace UserService.Controllers
             _userService = userService;
         }
 
-        // GET: api/<AuthController>
-        [HttpGet]
         [Authorize(Roles = "Admin")]
-        public async Task<ActionResult<IEnumerable<User>>> Get()
+        [HttpGet("total-users")]
+        public async Task<IActionResult> GetTotalUsers()
+        {
+            var totalUsers = await _userService.GetTotalUsers();
+            return Ok(totalUsers);
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpGet("total-patients")]
+        public async Task<IActionResult> GetTotalPatients()
+        {
+            var totalPatients = await _userService.GetTotalPatients();
+            return Ok(totalPatients);
+        }
+
+
+        [Authorize(Roles = "Admin")]
+        [HttpGet("total-doctors")]
+        public async Task<IActionResult> GetTotalDoctors()
+        {
+            var totalDoctors = await _userService.GetTotalDoctors();
+            return Ok(totalDoctors);
+        }
+
+        // GET: api/<AuthController>
+        [Authorize(Roles = "Admin")]
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<User>>> GetAll()
         {
             var users = await _userService.GetAllUsers();
-            if(users == null)
+            if (users == null)
             {
                 return NotFound("No users found");
             }
@@ -35,21 +60,22 @@ namespace UserService.Controllers
         }
 
 
-        [HttpGet("email")]
-        [Authorize(Roles = "Admin")]
-        public async Task<ActionResult<User>> GetUserByEmail(UserDTO userDto)
+        [Authorize]
+        [HttpGet("userId")]
+        public async Task<ActionResult<User>> GetUserById(int userId)
         {
-            if (string.IsNullOrEmpty(userDto.Email))
-                return BadRequest("Email is required");
 
-            var user = await _userService.GetUserByEmail(userDto);
+            var user = await _userService.GetUserById(userId);
             if (user == null)
-                return NotFound($"No user found with email: {userDto.Email}");
-
+            {
+                return NotFound($"No user found with email: {userId}");
+            }
+                
             return Ok(user);
         }
 
 
+        [Authorize(Roles = "Admin")]
         [HttpGet("role/{role}")]
         public async Task<ActionResult<List<User>>> GetUserByRole(string role)
         {
@@ -61,18 +87,17 @@ namespace UserService.Controllers
             return Ok(user);
         }
 
-        // POST api/<AuthController>
-        [HttpPost]
+        [HttpPost("Register")]
         public async Task<IActionResult> Register([FromBody] RegisterDTO registerDto)
         {
             bool result = await _userService.Register(registerDto);
             if (result)
             {
-                return Ok("Customer registered successfully");
+                return Ok("User registered successfully");
             }
             else
             {
-                return BadRequest("Unable to register customer");
+                return BadRequest("User to register customer");
             }
         }
 
@@ -81,7 +106,7 @@ namespace UserService.Controllers
         public async Task<ActionResult<LoginDTO>> Login([FromBody] LoginDTO loginDto)
         {
             var result = await _userService.Login(loginDto);
-            if (result != null && !String.IsNullOrWhiteSpace(result.JWTTokenKey))
+            if (result != null && !string.IsNullOrWhiteSpace(result.JWTTokenKey))
             {
                 return Ok(result);
             }
@@ -93,7 +118,6 @@ namespace UserService.Controllers
 
         // PUT api/<AuthController>/5
         [HttpPut("update")]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateUser([FromBody] UserDTO userDto)
         {
             if (!ModelState.IsValid)
@@ -108,13 +132,31 @@ namespace UserService.Controllers
             return Ok("User updated successfully.");
         }
 
+        // UserController.cs
+        [Authorize]
+        [HttpPut("change-password")]
+        public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDTO changePasswordDto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var result = await _userService.ChangePassword(changePasswordDto);
+            if (!result)
+            {
+                return BadRequest("Failed to change password. Please check your current password and try again.");
+            }
+
+            return Ok("Password changed successfully.");
+        }
+
+
         // DELETE api/<AuthController>/5
-        [HttpDelete("delete")]
         [Authorize(Roles = "Admin")]
+        [HttpDelete("{email}/delete")]
         public async Task<IActionResult> DeleteUser(string email)
         {
-            if (string.IsNullOrEmpty(email))
-                return BadRequest("Email is required");
+            //if (string.IsNullOrEmpty(email))
+            //    return BadRequest("Email is required");
 
             var result = await _userService.DeleteUser(email);
             if (!result)

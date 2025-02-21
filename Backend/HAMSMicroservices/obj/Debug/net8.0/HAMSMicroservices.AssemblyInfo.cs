@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HAMSMicroservices")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+642b5311378a944f8b03df44e7314b9f2db0ebc6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e58c2a46cca8ea3bfb1bb10ad8cdc928198e2f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("HAMSMicroservices")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HAMSMicroservices")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,7 +1,8 @@
-﻿using System;
+﻿using HAMSGateWay.Models;
+using System;
 using System.Collections.Generic;
 
-namespace UserService.Models;
+namespace HAMSGateWay.Models;
 
 public partial class Doctoravailabilityslot
 {

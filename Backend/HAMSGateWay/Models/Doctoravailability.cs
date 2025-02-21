@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using HAMSGateWay.Models;
 
-namespace UserService.Models;
+namespace HAMSGateWay.Models;
 
 public partial class Doctoravailability
 {
     public int AvailabilityId { get; set; }
 
     public int DoctorId { get; set; }
+    public DateOnly Date { get; set; }
 
     public string DayOfWeek { get; set; } = null!;
 

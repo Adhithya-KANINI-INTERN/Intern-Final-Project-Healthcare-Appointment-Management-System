@@ -20,7 +20,7 @@ public partial class AppDBContext : DbContext
 
     public virtual DbSet<Doctor> Doctors { get; set; }
 
-    public virtual DbSet<Doctoravailability> Doctoravailabilities { get; set; }
+    public virtual DbSet<Doctoravailability> Doctoravailability { get; set; }
 
     public virtual DbSet<Doctoravailabilityslot> Doctoravailabilityslots { get; set; }
 
@@ -46,20 +46,40 @@ public partial class AppDBContext : DbContext
             entity.HasIndex(e => e.PatientId, "PatientID");
 
             entity.Property(e => e.AppointmentId).HasColumnName("AppointmentID");
-            entity.Property(e => e.AppointmentDate).HasColumnType("datetime");
+            entity.Property(e => e.Date)
+                  .HasColumnType("date")
+                  .IsRequired();
+
+            entity.Property(e => e.StartTime)
+                .HasColumnType("time")
+                .IsRequired();
+
+            entity.Property(e => e.EndTime)
+                .HasColumnType("time")
+                .IsRequired();
+
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .HasColumnType("timestamp");
             entity.Property(e => e.DoctorId).HasColumnName("DoctorID");
             entity.Property(e => e.PatientId).HasColumnName("PatientID");
-            entity.Property(e => e.Reason).HasColumnType("text");
+            // Updated column name and type for `Reason`
+            entity.Property(e => e.ReasonForVisit)
+                .HasColumnType("text");
+
+            // Updated `Status` column configuration
             entity.Property(e => e.Status)
-                .HasDefaultValueSql("'Pending'")
-                .HasColumnType("enum('Pending','Confirmed','Cancelled','Completed')");
+                .HasDefaultValueSql("'Confirmed'")
+                .HasColumnType("enum('Confirmed','Cancelled','Completed')");
             entity.Property(e => e.UpdatedAt)
                 .ValueGeneratedOnAddOrUpdate()
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .HasColumnType("timestamp");
+
+            // Added `Cancellation` column
+            entity.Property(e => e.Cancellation)
+                .HasColumnType("text")
+                .HasDefaultValueSql("NULL");
 
             entity.HasOne(d => d.Doctor).WithMany(p => p.Appointments)
                 .HasForeignKey(d => d.DoctorId)
@@ -70,6 +90,7 @@ public partial class AppDBContext : DbContext
                 .HasForeignKey(d => d.PatientId)
                 .HasConstraintName("appointments_ibfk_1");
         });
+
 
         modelBuilder.Entity<Doctor>(entity =>
         {
@@ -83,11 +104,22 @@ public partial class AppDBContext : DbContext
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .HasColumnType("timestamp");
-            entity.Property(e => e.Specialization).HasMaxLength(255);
             entity.Property(e => e.UpdatedAt)
                 .ValueGeneratedOnAddOrUpdate()
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .HasColumnType("timestamp");
+            entity.Property(e => e.Specialization)
+                .HasMaxLength(255)
+                .IsRequired();
+            entity.Property(e => e.YearsOfExperience)
+                .HasColumnName("YearsOfExperience")
+                .HasDefaultValue(0); // Optional: Provide a default value
+            entity.Property(e => e.VerificationStatus)
+                .HasColumnName("VerificationStatus")
+                .HasConversion<string>() // Convert Enum to string for database storage
+                .IsRequired()
+                .HasDefaultValue("Pending");
+
             entity.Property(e => e.UserId).HasColumnName("UserID");
 
             entity.HasOne(d => d.User).WithMany(p => p.Doctors)
@@ -95,6 +127,8 @@ public partial class AppDBContext : DbContext
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("doctors_ibfk_1");
         });
+
+        
 
         modelBuilder.Entity<Doctoravailability>(entity =>
         {
@@ -108,6 +142,9 @@ public partial class AppDBContext : DbContext
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .HasColumnType("timestamp");
+            entity.Property(e => e.Date)
+                .HasColumnType("date")
+                .IsRequired();
             entity.Property(e => e.DayOfWeek).HasColumnType("enum('Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday')");
             entity.Property(e => e.DoctorId).HasColumnName("DoctorID");
             entity.Property(e => e.EndTime).HasColumnType("time");
@@ -138,6 +175,11 @@ public partial class AppDBContext : DbContext
                 .HasColumnType("timestamp");
             entity.Property(e => e.SlotEndTime).HasColumnType("time");
             entity.Property(e => e.SlotStartTime).HasColumnType("time");
+
+            entity.Property(e => e.IsAvailable)
+                .HasColumnName("IsAvailable")
+                .HasColumnType("tinyint(1)") 
+                .HasDefaultValue(true);
 
             entity.HasOne(d => d.Availability).WithMany(p => p.Doctoravailabilityslots)
                 .HasForeignKey(d => d.AvailabilityId)
@@ -182,27 +224,7 @@ public partial class AppDBContext : DbContext
                 .HasConstraintName("notifications_ibfk_2");
         });
 
-        //modelBuilder.Entity<Notification>(entity =>
-        //{
-        //    entity.HasKey(e => e.NotificationId).HasName("PRIMARY");
-
-        //    entity.ToTable("notifications");
-
-        //    entity.HasIndex(e => e.UserId, "UserID");
-
-        //    entity.Property(e => e.NotificationId).HasColumnName("NotificationID");
-        //    entity.Property(e => e.CreatedAt)
-        //        .HasDefaultValueSql("CURRENT_TIMESTAMP")
-        //        .HasColumnType("timestamp");
-        //    entity.Property(e => e.Message).HasColumnType("text");
-        //    entity.Property(e => e.NotificationType).HasColumnType("enum('Confirmation','Reminder','Cancellation')");
-        //    entity.Property(e => e.UserId).HasColumnName("UserID");
-
-        //    entity.HasOne(d => d.User).WithMany(p => p.Notifications)
-        //        .HasForeignKey(d => d.UserId)
-        //        .OnDelete(DeleteBehavior.ClientSetNull)
-        //        .HasConstraintName("notifications_ibfk_1");
-        //});
+        
 
         modelBuilder.Entity<User>(entity =>
         {

@@ -1,16 +1,16 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace UserService.DTOs
+namespace HAMSGateWay.DTOs
 {
     public class RegisterDTO
     {
         [Required]
-        [EmailAddress]
         public string FullName { get; set; } = null!;
         [Required]
-        [MinLength(8)]
+        [EmailAddress]
         public string Email { get; set; } = null!;
         [Required]
+        [MinLength(8)]
         public string Password { get; set; } = null!;
         [Required]
         public string Role { get; set; } = null!; 

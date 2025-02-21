@@ -1,4 +1,4 @@
-﻿namespace UserService.DTOs
+﻿namespace HAMSGateWay.DTOs
 {
     public class UserDTO
     {
@@ -10,8 +10,8 @@
 
         public string Password { get; set; }
 
-        //public string PasswordSalt { get; set; }
-
         public string Role { get; set; }
+
+        public string CreatedAt { get; set; }
     }
 }

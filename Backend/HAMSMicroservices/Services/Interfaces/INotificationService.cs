@@ -8,7 +8,5 @@ namespace HAMSMicroservices.Services.Interfaces
         Task CreateNotification(CreateNotificationDTO notificationDto);
         Task MarkAsRead(int notificationId);
         Task<List<NotificationDTO>> GetUpcomingRemindersForUser(int userId);
-
-        int? GetUserIdFromContext();
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace UserService.Models;
+namespace HAMSGateWay.Models;
 
 public partial class Notification
 {

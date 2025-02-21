@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Controllers"
+    "\\Controllers",
+    "\\DTOs"
   ],
   "SelectedNode": "\\HAMSMicroservices.sln",
   "PreviewInSolutionExplorer": false

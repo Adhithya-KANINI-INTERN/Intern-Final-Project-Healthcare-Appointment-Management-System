@@ -1,7 +1,397 @@
 [
   {
-    "ContainingType": "UserService.Controllers.UserController",
-    "Method": "Get",
+    "ContainingType": "HAMSGateway.Controllers.AppointmentController",
+    "Method": "GetAllAppointments",
+    "RelativePath": "api/Appointment/all-appointments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.AppointmentController",
+    "Method": "GetAppointmentsByDoctor",
+    "RelativePath": "api/Appointment/by-doctor/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.AppointmentController",
+    "Method": "CancelAppointment",
+    "RelativePath": "api/Appointment/cancel/{appointmentId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cancelDto",
+        "Type": "HAMSGateway.DTOs.AppointmentCancelDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "appointmentId",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.AppointmentController",
+    "Method": "CancelAppointmentByDoctor",
+    "RelativePath": "api/Appointment/completed/{appointmentId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appointmentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.AppointmentController",
+    "Method": "CreateAppointment",
+    "RelativePath": "api/Appointment/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createDto",
+        "Type": "HAMSGateway.DTOs.AppointmentCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.AppointmentController",
+    "Method": "GetDoctorAppointments",
+    "RelativePath": "api/Appointment/doctor-appointments/{doctorId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.AppointmentController",
+    "Method": "GetAppointmentsPatient",
+    "RelativePath": "api/Appointment/patient-appointment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.AppointmentController",
+    "Method": "GetAppointmentsByPatient",
+    "RelativePath": "api/Appointment/patient/{patientId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patientId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.AppointmentController",
+    "Method": "GetTotalConfirmedAppointments",
+    "RelativePath": "api/Appointment/total-appointments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.AppointmentController",
+    "Method": "UpdateAppointment",
+    "RelativePath": "api/Appointment/update/{appointmentId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateDto",
+        "Type": "HAMSGateway.DTOs.AppointmentUpdateDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "appointmentId",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.DoctorController",
+    "Method": "GetAvailableSlotsofDoctor",
+    "RelativePath": "api/Doctor/{doctorId}/available-slots",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "appointmentDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.DoctorController",
+    "Method": "GetDoctorSlots",
+    "RelativePath": "api/Doctor/{doctorId}/doctor-slots",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "appointmentDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.DoctorController",
+    "Method": "AddDoctorProfile",
+    "RelativePath": "api/Doctor/add-profile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addDoctorProfileDTO",
+        "Type": "HAMSGateWay.DTOs.AddDoctorProfileDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.DoctorController",
+    "Method": "GetAllDoctorProfile",
+    "RelativePath": "api/Doctor/all-profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.DoctorController",
+    "Method": "ManageAvailability",
+    "RelativePath": "api/Doctor/availability",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorAvailabilityDto",
+        "Type": "HAMSGateWay.DTOs.DoctorAvailabilityDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.DoctorController",
+    "Method": "CheckDoctorProfile",
+    "RelativePath": "api/Doctor/check-profile/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.DoctorController",
+    "Method": "GetPendingDoctors",
+    "RelativePath": "api/Doctor/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.DoctorController",
+    "Method": "GetDoctorProfilebyId",
+    "RelativePath": "api/Doctor/profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.DoctorController",
+    "Method": "GetDoctorProfile",
+    "RelativePath": "api/Doctor/profile/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.DoctorController",
+    "Method": "GetDoctorsBySpecialization",
+    "RelativePath": "api/Doctor/specialization/{specialization}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "specialization",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.DoctorController",
+    "Method": "UpdateDoctorProfile",
+    "RelativePath": "api/Doctor/updateprofile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorDTO",
+        "Type": "HAMSGateWay.DTOs.DoctorDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.DoctorController",
+    "Method": "VerifyDoctorProfile",
+    "RelativePath": "api/Doctor/verify-doctor",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "verifyDoctorDto",
+        "Type": "HAMSGateWay.DTOs.VerifyDoctorDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.NotificationController",
+    "Method": "MarkNotificationAsRead",
+    "RelativePath": "api/Notification/mark-as-read/{notificationId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notificationId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.NotificationController",
+    "Method": "GetUpcomingReminders",
+    "RelativePath": "api/Notification/reminders/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateway.Controllers.NotificationController",
+    "Method": "GetUserNotifications",
+    "RelativePath": "api/Notification/user-notifications/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateWay.Controllers.UserController",
+    "Method": "GetAll",
     "RelativePath": "api/User",
     "HttpMethod": "GET",
     "IsController": true,
@@ -9,7 +399,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[UserService.Models.User, UserService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[HAMSGateWay.Models.User, HAMSGateWay, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -20,25 +410,9 @@
     ]
   },
   {
-    "ContainingType": "UserService.Controllers.UserController",
-    "Method": "Register",
-    "RelativePath": "api/User",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "registerDto",
-        "Type": "UserService.DTO.RegisterDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "UserService.Controllers.UserController",
+    "ContainingType": "HAMSGateWay.Controllers.UserController",
     "Method": "DeleteUser",
-    "RelativePath": "api/User/delete",
+    "RelativePath": "api/User/{email}/delete",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -46,39 +420,29 @@
       {
         "Name": "email",
         "Type": "System.String",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "UserService.Controllers.UserController",
-    "Method": "GetUserByEmail",
-    "RelativePath": "api/User/email",
-    "HttpMethod": "GET",
+    "ContainingType": "HAMSGateWay.Controllers.UserController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/User/change-password",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userDto",
-        "Type": "UserService.Models.UserDTO",
+        "Name": "changePasswordDto",
+        "Type": "HAMSGateWay.DTOs.ChangePasswordDTO",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "UserService.Models.User",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "UserService.Controllers.UserController",
+    "ContainingType": "HAMSGateWay.Controllers.UserController",
     "Method": "Login",
     "RelativePath": "api/User/Login",
     "HttpMethod": "POST",
@@ -87,13 +451,13 @@
     "Parameters": [
       {
         "Name": "loginDto",
-        "Type": "UserService.DTO.LoginDTO",
+        "Type": "HAMSGateWay.DTOs.LoginDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "UserService.DTO.LoginDTO",
+        "Type": "HAMSGateWay.DTOs.LoginDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -104,7 +468,23 @@
     ]
   },
   {
-    "ContainingType": "UserService.Controllers.UserController",
+    "ContainingType": "HAMSGateWay.Controllers.UserController",
+    "Method": "Register",
+    "RelativePath": "api/User/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerDto",
+        "Type": "HAMSGateWay.DTOs.RegisterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateWay.Controllers.UserController",
     "Method": "GetUserByRole",
     "RelativePath": "api/User/role/{role}",
     "HttpMethod": "GET",
@@ -119,7 +499,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[UserService.Models.User, UserService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[HAMSGateWay.Models.User, HAMSGateWay, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -130,7 +510,37 @@
     ]
   },
   {
-    "ContainingType": "UserService.Controllers.UserController",
+    "ContainingType": "HAMSGateWay.Controllers.UserController",
+    "Method": "GetTotalDoctors",
+    "RelativePath": "api/User/total-doctors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateWay.Controllers.UserController",
+    "Method": "GetTotalPatients",
+    "RelativePath": "api/User/total-patients",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateWay.Controllers.UserController",
+    "Method": "GetTotalUsers",
+    "RelativePath": "api/User/total-users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateWay.Controllers.UserController",
     "Method": "UpdateUser",
     "RelativePath": "api/User/update",
     "HttpMethod": "PUT",
@@ -139,10 +549,36 @@
     "Parameters": [
       {
         "Name": "userDto",
-        "Type": "UserService.Models.UserDTO",
+        "Type": "HAMSGateWay.DTOs.UserDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HAMSGateWay.Controllers.UserController",
+    "Method": "GetUserById",
+    "RelativePath": "api/User/userId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HAMSGateWay.Models.User",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

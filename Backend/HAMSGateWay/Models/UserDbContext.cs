@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Scaffolding.Internal;
+using HAMSGateWay.Models;
 
-namespace UserService.Models;
+namespace HAMSGateWay.Models;
 
 public partial class UserDbContext : DbContext
 {
@@ -45,20 +46,40 @@ public partial class UserDbContext : DbContext
             entity.HasIndex(e => e.PatientId, "PatientID");
 
             entity.Property(e => e.AppointmentId).HasColumnName("AppointmentID");
-            entity.Property(e => e.AppointmentDate).HasColumnType("datetime");
+            entity.Property(e => e.Date)
+                  .HasColumnType("date")
+                  .IsRequired();
+
+            entity.Property(e => e.StartTime)
+                .HasColumnType("time")
+                .IsRequired();
+
+            entity.Property(e => e.EndTime)
+                .HasColumnType("time")
+                .IsRequired();
+
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .HasColumnType("timestamp");
             entity.Property(e => e.DoctorId).HasColumnName("DoctorID");
             entity.Property(e => e.PatientId).HasColumnName("PatientID");
-            entity.Property(e => e.Reason).HasColumnType("text");
+            // Updated column name and type for `Reason`
+            entity.Property(e => e.ReasonForVisit)
+                .HasColumnType("text");
+
+            // Updated `Status` column configuration
             entity.Property(e => e.Status)
-                .HasDefaultValueSql("'Pending'")
-                .HasColumnType("enum('Pending','Confirmed','Cancelled','Completed')");
+                .HasDefaultValueSql("'Confirmed'")
+                .HasColumnType("enum('Confirmed','Cancelled','Completed')");
             entity.Property(e => e.UpdatedAt)
                 .ValueGeneratedOnAddOrUpdate()
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .HasColumnType("timestamp");
+
+            // Added `Cancellation` column
+            entity.Property(e => e.Cancellation)
+                .HasColumnType("text")
+                .HasDefaultValueSql("NULL");
 
             entity.HasOne(d => d.Doctor).WithMany(p => p.Appointments)
                 .HasForeignKey(d => d.DoctorId)
@@ -82,11 +103,22 @@ public partial class UserDbContext : DbContext
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .HasColumnType("timestamp");
-            entity.Property(e => e.Specialization).HasMaxLength(255);
             entity.Property(e => e.UpdatedAt)
                 .ValueGeneratedOnAddOrUpdate()
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .HasColumnType("timestamp");
+            entity.Property(e => e.Specialization)
+                .HasMaxLength(255)
+                .IsRequired();
+            entity.Property(e => e.YearsOfExperience)
+                .HasColumnName("YearsOfExperience")
+                .HasDefaultValue(0); // Optional: Provide a default value
+            entity.Property(e => e.VerificationStatus)
+                .HasColumnName("VerificationStatus")
+                .HasConversion<string>() // Convert Enum to string for database storage
+                .IsRequired()
+                .HasDefaultValue("Pending");
+
             entity.Property(e => e.UserId).HasColumnName("UserID");
 
             entity.HasOne(d => d.User).WithMany(p => p.Doctors)
@@ -94,6 +126,7 @@ public partial class UserDbContext : DbContext
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("doctors_ibfk_1");
         });
+
 
         modelBuilder.Entity<Doctoravailability>(entity =>
         {
@@ -107,6 +140,9 @@ public partial class UserDbContext : DbContext
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .HasColumnType("timestamp");
+            entity.Property(e => e.Date)
+                .HasColumnType("date")
+                .IsRequired();
             entity.Property(e => e.DayOfWeek).HasColumnType("enum('Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday')");
             entity.Property(e => e.DoctorId).HasColumnName("DoctorID");
             entity.Property(e => e.EndTime).HasColumnType("time");

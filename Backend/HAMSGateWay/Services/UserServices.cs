@@ -1,11 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using HAMSGateWay.DTOs;
+using HAMSGateWay.Models;
+using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
 using System.Text;
-using UserService.DTOs;
-using UserService.Models;
-using UserService.Services.Interfaces;
+using HAMSGateWay.Services.Interfaces;
 
-namespace UserService.Services
+namespace HAMSGateWay.Services
 {
     public class UserServices : IUserService
     {
@@ -34,11 +34,11 @@ namespace UserService.Services
             }
         }
 
-        public async Task<User> GetUserByEmail(UserDTO userdto)
+        public async Task<User> GetUserById(int userId)
         {
             try
             {
-                var user = await _dbContext.Users.SingleOrDefaultAsync( x => x.Email == userdto.Email );
+                var user = await _dbContext.Users.SingleOrDefaultAsync( x => x.UserId == userId );
                 if( user == null )
                 {
                     return null;
@@ -81,7 +81,10 @@ namespace UserService.Services
                     return null;
                 }
 
-                loginDto.JWTTokenKey = _tokenService.GenerateToken(user.Email, user.Role);
+                loginDto.JWTTokenKey = _tokenService.GenerateToken(user.Email, user.Role, user.UserId);
+                loginDto.Password = "";
+                loginDto.Email = "";
+                loginDto.FullName = user.FullName;
 
                 return loginDto;
             }
@@ -139,7 +142,7 @@ namespace UserService.Services
 
                 user.FullName = userDto.FullName ?? user.FullName;
                 user.Email = userDto.Email ?? user.Email;
-                user.Role = userDto.Role ?? user.Role;
+                //user.Role = userDto.Role ?? user.Role;
                 
 
                 if (!string.IsNullOrWhiteSpace(userDto.Password))
@@ -183,6 +186,73 @@ namespace UserService.Services
                 return false;
             }
         }
-        //git check purpose
+
+
+        public async Task<bool> ChangePassword(ChangePasswordDTO changePasswordDto)
+        {
+            try
+            {
+                var user = await _dbContext.Users.SingleOrDefaultAsync(u => u.Email == changePasswordDto.Email);
+                if (user == null)
+                {
+                    return false; 
+                }
+
+
+                var (newPasswordHash, newPasswordSalt) = _tokenService.CreatePasswordHash(changePasswordDto.NewPassword);
+                user.PasswordHash = newPasswordHash;
+                user.PasswordSalt = newPasswordSalt;
+
+               
+                _dbContext.Users.Update(user);
+                await _dbContext.SaveChangesAsync();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error changing password: {ex.Message}");
+                return false;
+            }
+        }
+
+        public async Task<int> GetTotalUsers()
+        {
+            try
+            {
+                return await _dbContext.Users.CountAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error fetching total users: {ex.Message}");
+                return 0;
+            }
+        }
+
+        public async Task<int> GetTotalPatients()
+        {
+            try
+            {
+                return await _dbContext.Users.CountAsync(u => u.Role == "Patient");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error fetching total patients: {ex.Message}");
+                return 0;
+            }
+        }
+
+        public async Task<int> GetTotalDoctors()
+        {
+            try
+            {
+                return await _dbContext.Users.CountAsync(u => u.Role == "Doctor");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error fetching total doctors: {ex.Message}");
+                return 0;
+            }
+        }
     }
 }

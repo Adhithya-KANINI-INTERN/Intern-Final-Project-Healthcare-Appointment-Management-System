@@ -1,102 +1,130 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\",
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\dtos\\appointmentapprovaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:dtos\\appointmentapprovaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\models\\doctoravailability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:models\\doctoravailability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\models\\doctoravailabilityslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:models\\doctoravailabilityslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\services\\interfaces\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:services\\interfaces\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\dtos\\createnotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:dtos\\createnotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\dtos\\notificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:dtos\\notificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\dtos\\doctoravailabilityslotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:dtos\\doctoravailabilityslotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\dtos\\appointmentcanceldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:dtos\\appointmentcanceldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\dtos\\appointmentupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:dtos\\appointmentupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\dtos\\appointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:dtos\\appointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\dtos\\doctoravailabilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:dtos\\doctoravailabilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\dtos\\doctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:dtos\\doctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\hamsmicroservices.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:hamsmicroservices.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\services\\interfaces\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:services\\interfaces\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\services\\interfaces\\idoctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:services\\interfaces\\idoctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final project\\hamsmicroservices\\services\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\services\\interfaces\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:services\\interfaces\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\services\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:services\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\services\\interfaces\\idoctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:services\\interfaces\\idoctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\dtos\\doctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:dtos\\doctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\dtos\\doctoravailabilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:dtos\\doctoravailabilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\dtos\\appointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:dtos\\appointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\dtos\\appointmentupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:dtos\\appointmentupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\dtos\\doctoravailabilityslotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:dtos\\doctoravailabilityslotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\hamsmicroservices.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:hamsmicroservices.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\dtos\\appointmentapprovaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:dtos\\appointmentapprovaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\dtos\\createnotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:dtos\\createnotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\dtos\\notificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:dtos\\notificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\dtos\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:dtos\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\dtos\\appointmentcanceldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:dtos\\appointmentcanceldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\hamsmicroservices.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:hamsmicroservices.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|c:\\users\\asus\\desktop\\intern\\final intern project\\healthcare appointment management system\\backend\\hamsmicroservices\\services\\interfaces\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{344080B4-B891-42BB-AD2E-ED8F79F0A7EF}|HAMSMicroservices.csproj|solutionrelative:services\\interfaces\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,41 +134,176 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DoctorService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Services\\DoctorService.cs",
+              "RelativeDocumentMoniker": "Services\\DoctorService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Services\\DoctorService.cs",
+              "RelativeToolTip": "Services\\DoctorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T07:03:04.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IAppointmentService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Services\\Interfaces\\IAppointmentService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IAppointmentService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Services\\Interfaces\\IAppointmentService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IAppointmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T07:04:49.987Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "NotificationController.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Controllers\\NotificationController.cs",
-              "RelativeDocumentMoniker": "Controllers\\NotificationController.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Controllers\\NotificationController.cs",
-              "RelativeToolTip": "Controllers\\NotificationController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwDAAAAAAAAAAAAAAAA==",
+              "Title": "AppointmentService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Services\\AppointmentService.cs",
+              "RelativeDocumentMoniker": "Services\\AppointmentService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Services\\AppointmentService.cs",
+              "RelativeToolTip": "Services\\AppointmentService.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwDIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T05:55:30.481Z",
+              "WhenOpened": "2024-12-04T07:03:23.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AppDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Models\\AppDBContext.cs",
+              "RelativeDocumentMoniker": "Models\\AppDBContext.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Models\\AppDBContext.cs",
+              "RelativeToolTip": "Models\\AppDBContext.cs",
+              "ViewState": "AgIAANYAAAAAAAAAAAAkwP8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T10:49:06.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Controllers\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AppointmentController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Controllers\\AppointmentController.cs",
+              "RelativeToolTip": "Controllers\\AppointmentController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAUwDMAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T08:03:15.415Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppointmentApprovalDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\DTOs\\AppointmentApprovalDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\AppointmentApprovalDTO.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\DTOs\\AppointmentApprovalDTO.cs",
-              "RelativeToolTip": "DTOs\\AppointmentApprovalDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "DoctorAvailabilityDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\DTOs\\DoctorAvailabilityDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\DoctorAvailabilityDTO.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\DTOs\\DoctorAvailabilityDTO.cs",
+              "RelativeToolTip": "DTOs\\DoctorAvailabilityDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T18:34:50.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T05:41:32.85Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
+              "Title": "AppointmentUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\DTOs\\AppointmentUpdateDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\AppointmentUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\DTOs\\AppointmentUpdateDTO.cs",
+              "RelativeToolTip": "DTOs\\AppointmentUpdateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T05:36:35.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AppointmentDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\DTOs\\AppointmentDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\AppointmentDTO.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\DTOs\\AppointmentDTO.cs",
+              "RelativeToolTip": "DTOs\\AppointmentDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T08:06:48.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DoctorController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "Controllers\\DoctorController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAswB8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T10:12:39.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-13T10:58:21.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TokenDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\DTOs\\TokenDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\TokenDTO.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\DTOs\\TokenDTO.cs",
+              "RelativeToolTip": "DTOs\\TokenDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T12:15:36.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DoctorAvailabilitySlotDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\DTOs\\DoctorAvailabilitySlotDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\DoctorAvailabilitySlotDTO.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\DTOs\\DoctorAvailabilitySlotDTO.cs",
+              "RelativeToolTip": "DTOs\\DoctorAvailabilitySlotDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T07:22:50.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "NotificationDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\DTOs\\NotificationDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\NotificationDTO.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\DTOs\\NotificationDTO.cs",
+              "RelativeToolTip": "DTOs\\NotificationDTO.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAA4wA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T18:26:18.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "CreateNotificationDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\DTOs\\CreateNotificationDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\DTOs\\CreateNotificationDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\CreateNotificationDTO.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\DTOs\\CreateNotificationDTO.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\DTOs\\CreateNotificationDTO.cs",
               "RelativeToolTip": "DTOs\\CreateNotificationDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -148,181 +311,167 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "NotificationDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\DTOs\\NotificationDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\NotificationDTO.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\DTOs\\NotificationDTO.cs",
-              "RelativeToolTip": "DTOs\\NotificationDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 21,
+              "Title": "AppointmentApprovalDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\DTOs\\AppointmentApprovalDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\AppointmentApprovalDTO.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\DTOs\\AppointmentApprovalDTO.cs",
+              "RelativeToolTip": "DTOs\\AppointmentApprovalDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T18:26:18.663Z"
+              "WhenOpened": "2024-12-09T18:34:50.301Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "Models\\Appointment.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Models\\Appointment.cs",
+              "RelativeToolTip": "Models\\Appointment.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAswBwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T04:57:47.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NotificationController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Controllers\\NotificationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NotificationController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Controllers\\NotificationController.cs",
+              "RelativeToolTip": "Controllers\\NotificationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T05:55:30.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HAMSMicroservices.http",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\HAMSMicroservices.http",
+              "RelativeDocumentMoniker": "HAMSMicroservices.http",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\HAMSMicroservices.http",
+              "RelativeToolTip": "HAMSMicroservices.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-12-13T10:58:23.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Doctoravailability.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Models\\Doctoravailability.cs",
+              "RelativeDocumentMoniker": "Models\\Doctoravailability.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Models\\Doctoravailability.cs",
+              "RelativeToolTip": "Models\\Doctoravailability.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T18:59:23.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Doctoravailabilityslot.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Models\\Doctoravailabilityslot.cs",
+              "RelativeDocumentMoniker": "Models\\Doctoravailabilityslot.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Models\\Doctoravailabilityslot.cs",
+              "RelativeToolTip": "Models\\Doctoravailabilityslot.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAowA4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T14:05:46.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T06:06:22.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Notification.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Models\\Notification.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Models\\Notification.cs",
               "RelativeDocumentMoniker": "Models\\Notification.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Models\\Notification.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Models\\Notification.cs",
               "RelativeToolTip": "Models\\Notification.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAASwBcAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-09T18:23:28.602Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AppointmentController.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Controllers\\AppointmentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AppointmentController.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Controllers\\AppointmentController.cs",
-              "RelativeToolTip": "Controllers\\AppointmentController.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAwFsAAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T08:03:15.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DoctorAvailabilitySlotDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\DTOs\\DoctorAvailabilitySlotDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\DoctorAvailabilitySlotDTO.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\DTOs\\DoctorAvailabilitySlotDTO.cs",
-              "RelativeToolTip": "DTOs\\DoctorAvailabilitySlotDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T07:22:50.219Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 25,
               "Title": "AppointmentCancelDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\DTOs\\AppointmentCancelDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\DTOs\\AppointmentCancelDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\AppointmentCancelDTO.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\DTOs\\AppointmentCancelDTO.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\DTOs\\AppointmentCancelDTO.cs",
               "RelativeToolTip": "DTOs\\AppointmentCancelDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-09T05:37:15.296Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AppointmentUpdateDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\DTOs\\AppointmentUpdateDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\AppointmentUpdateDTO.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\DTOs\\AppointmentUpdateDTO.cs",
-              "RelativeToolTip": "DTOs\\AppointmentUpdateDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T05:36:35.642Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AppointmentDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\DTOs\\AppointmentDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\AppointmentDTO.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\DTOs\\AppointmentDTO.cs",
-              "RelativeToolTip": "DTOs\\AppointmentDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T08:06:48.794Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DoctorController.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Controllers\\DoctorController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DoctorController.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Controllers\\DoctorController.cs",
-              "RelativeToolTip": "Controllers\\DoctorController.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAYwHQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T10:12:39.083Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 26,
               "Title": "Doctor.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Models\\Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Models\\Doctor.cs",
               "RelativeDocumentMoniker": "Models\\Doctor.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Models\\Doctor.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Models\\Doctor.cs",
               "RelativeToolTip": "Models\\Doctor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-05T05:41:41.984Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DoctorAvailabilityDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\DTOs\\DoctorAvailabilityDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\DoctorAvailabilityDTO.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\DTOs\\DoctorAvailabilityDTO.cs",
-              "RelativeToolTip": "DTOs\\DoctorAvailabilityDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T05:41:32.85Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 11,
               "Title": "DoctorDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\DTOs\\DoctorDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\DTOs\\DoctorDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\DoctorDTO.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\DTOs\\DoctorDTO.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\DTOs\\DoctorDTO.cs",
               "RelativeToolTip": "DTOs\\DoctorDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-05T05:35:54.862Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 27,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Program.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAIBJwB8AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T10:51:26.973Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 28,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\appsettings.json",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-12-04T10:50:39.368Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AppDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Models\\AppDBContext.cs",
-              "RelativeDocumentMoniker": "Models\\AppDBContext.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Models\\AppDBContext.cs",
-              "RelativeToolTip": "Models\\AppDBContext.cs",
-              "ViewState": "AgIAAKQAAAAAAAAAAAAMwLEAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T10:49:06.28Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 29,
               "Title": "HAMSMicroservices.csproj",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\HAMSMicroservices.csproj",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\HAMSMicroservices.csproj",
               "RelativeDocumentMoniker": "HAMSMicroservices.csproj",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\HAMSMicroservices.csproj",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\HAMSMicroservices.csproj",
               "RelativeToolTip": "HAMSMicroservices.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -330,77 +479,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 30,
               "Title": "INotificationService.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Services\\Interfaces\\INotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Services\\Interfaces\\INotificationService.cs",
               "RelativeDocumentMoniker": "Services\\Interfaces\\INotificationService.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Services\\Interfaces\\INotificationService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Services\\Interfaces\\INotificationService.cs",
               "RelativeToolTip": "Services\\Interfaces\\INotificationService.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAywAsAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T07:05:25.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T07:05:25.276Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IAppointmentService.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Services\\Interfaces\\IAppointmentService.cs",
-              "RelativeDocumentMoniker": "Services\\Interfaces\\IAppointmentService.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Services\\Interfaces\\IAppointmentService.cs",
-              "RelativeToolTip": "Services\\Interfaces\\IAppointmentService.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAsAAABdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T07:04:49.987Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 6,
               "Title": "IDoctorService.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Services\\Interfaces\\IDoctorService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Services\\Interfaces\\IDoctorService.cs",
               "RelativeDocumentMoniker": "Services\\Interfaces\\IDoctorService.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Services\\Interfaces\\IDoctorService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Services\\Interfaces\\IDoctorService.cs",
               "RelativeToolTip": "Services\\Interfaces\\IDoctorService.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwAgAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAgAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T07:04:23.758Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "NotificationService.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Services\\NotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Services\\NotificationService.cs",
               "RelativeDocumentMoniker": "Services\\NotificationService.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Services\\NotificationService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Intern Project\\Healthcare Appointment Management System\\Backend\\HAMSMicroservices\\Services\\NotificationService.cs",
               "RelativeToolTip": "Services\\NotificationService.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAQwE0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAIA2wDAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T07:03:51.214Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AppointmentService.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Services\\AppointmentService.cs",
-              "RelativeDocumentMoniker": "Services\\AppointmentService.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Services\\AppointmentService.cs",
-              "RelativeToolTip": "Services\\AppointmentService.cs",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAwwJoAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T07:03:23.6Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "DoctorService.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Services\\DoctorService.cs",
-              "RelativeDocumentMoniker": "Services\\DoctorService.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\INTERN\\Final Project\\HAMSMicroservices\\Services\\DoctorService.cs",
-              "RelativeToolTip": "Services\\DoctorService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwB8AAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T07:03:04.261Z"
+              "WhenOpened": "2024-12-04T07:03:51.214Z"
             }
           ]
         }

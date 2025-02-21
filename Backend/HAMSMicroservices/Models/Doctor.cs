@@ -10,7 +10,8 @@ public partial class Doctor
     public int UserId { get; set; }
 
     public string Specialization { get; set; } = null!;
-
+    public int YearsOfExperience { get; set; } 
+    public string VerificationStatus { get; set; }
     public DateTime? CreatedAt { get; set; }
 
     public DateTime? UpdatedAt { get; set; }

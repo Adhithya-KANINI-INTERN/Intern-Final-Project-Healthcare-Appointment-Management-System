@@ -9,6 +9,8 @@ public partial class Doctoravailability
 
     public int DoctorId { get; set; }
 
+    public DateOnly Date { get; set; }
+
     public string DayOfWeek { get; set; } = null!;
 
     public TimeOnly StartTime { get; set; }

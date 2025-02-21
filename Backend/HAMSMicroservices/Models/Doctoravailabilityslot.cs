@@ -12,6 +12,7 @@ public partial class Doctoravailabilityslot
     public TimeOnly SlotStartTime { get; set; }
 
     public TimeOnly SlotEndTime { get; set; }
+    public bool IsAvailable { get; set; } = true;
 
     public DateTime? CreatedAt { get; set; }
 

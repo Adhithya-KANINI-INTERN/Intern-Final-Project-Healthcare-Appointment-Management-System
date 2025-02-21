@@ -17,30 +17,53 @@ namespace HAMSMicroservices.Controllers
             _notificationService = notificationService;
         }
 
-        [Authorize]
-        [HttpGet("user-notifications")]
-        public async Task<IActionResult> GetUserNotifications()
+        [HttpGet("user-notifications/{userId}")]
+        public async Task<IActionResult> GetUserNotifications(int userId)
         {
-            var userId = _notificationService.GetUserIdFromContext();
-            if (!userId.HasValue)
-                return Unauthorized("User not found.");
+            if (userId <= 0)
+                return BadRequest("Invalid user ID.");
 
-            var notifications = await _notificationService.GetNotificationsByUser(userId.Value);
+            var notifications = await _notificationService.GetNotificationsByUser(userId);
+
+            if (notifications == null || notifications.Count == 0)
+                return NotFound("No notifications found for the user.");
+
             return Ok(notifications);
         }
 
-        [Authorize]
-        [HttpGet("notifications/reminders")]
-        public async Task<IActionResult> GetReminders()
+        [HttpGet("reminders/{userId}")]
+        public async Task<IActionResult> GetReminders(int userId)
         {
-            var userId = _notificationService.GetUserIdFromContext(); 
+            if (userId <= 0)
+                return BadRequest("Invalid user ID.");
 
-            if (!userId.HasValue)
-                return Unauthorized("User not logged in.");
+            var reminders = await _notificationService.GetUpcomingRemindersForUser(userId);
 
-            var reminders = await _notificationService.GetUpcomingRemindersForUser(userId.Value);
+            if (reminders == null || reminders.Count == 0)
+                return NotFound("No reminders found.");
 
             return Ok(reminders);
+        }
+
+        [HttpPut("mark-as-read/{notificationId}")]
+        public async Task<IActionResult> MarkNotificationAsRead(int notificationId)
+        {
+            if (notificationId <= 0)
+                return BadRequest("Invalid notification ID.");
+
+            try
+            {
+                await _notificationService.MarkAsRead(notificationId);
+                return Ok("Notification marked as read.");
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
         }
 
 
