@@ -1,0 +1,88 @@
+<div class="container d-flex align-items-center justify-content-center vh-100">
+  <div class="card border-0 shadow-lg p-4" style="max-width: 600px; width: 100%; border-radius: 20px;">
+    <div class="card-body">
+      <h2 class="text-center mb-3">Register</h2>
+      <p class="text-center text-muted mb-3">Start your journey with HAMS today!</p>
+      <form (ngSubmit)="register()">
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="fullName"
+            [(ngModel)]="registerData.fullName"
+            name="fullName"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            [(ngModel)]="registerData.email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+
+        <div class="mb-3">
+          <label for="role" class="form-label">Role</label>
+          <select
+            [(ngModel)]="registerData.role"
+            id="role"
+            name="role"
+            class="form-select"
+            required
+          >
+            <option value="" disabled>Select Role</option>
+            <option value="Patient">Patient</option>
+            <option value="Doctor">Doctor</option>
+            <!-- <option value="Admin">Admin</option>  -->
+          </select>
+        </div>
+
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            [(ngModel)]="registerData.password"
+            (input)="validatePasswords()"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+
+
+        <div class="mb-3">
+          <label for="reenterPassword" class="form-label">Re-enter Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="reenterPassword"
+            [(ngModel)]="reenteredPassword"
+            (input)="validatePasswords()"
+            name="reenterPassword"
+            placeholder="Re-enter your password"
+            required
+          />
+        </div>
+
+        <p *ngIf="errorMessage" class="text-danger text-center">{{ errorMessage }}</p>
+
+      
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary w-100 ">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

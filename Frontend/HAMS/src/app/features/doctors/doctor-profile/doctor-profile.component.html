@@ -1,0 +1,21 @@
+<div>
+  <h2>Doctor Profile</h2>
+  
+  <!-- Input field visible only for Admin -->
+  <div *ngIf="isAdmin" class="admin-section">
+    <label for="doctorId">Enter Doctor ID:</label>
+    <input type="number" id="doctorId" [(ngModel)]="inputDoctorId" placeholder="Doctor ID" />
+    <button (click)="fetchProfileForAdmin()">Get Doctor Profile</button>
+  </div>
+
+  <!-- Display doctor profile -->
+  <div *ngIf="doctor; else noProfile">
+    <p><strong>Doctor ID:</strong> {{ doctor.doctorId }}</p>
+    <p><strong>Name:</strong> {{ doctor.doctorName }}</p>
+    <p><strong>Specialization:</strong> {{ doctor.specialization }}</p>
+  </div>
+
+  <ng-template #noProfile>
+    <p *ngIf="!isAdmin">No doctor profile available.</p>
+  </ng-template>
+</div>

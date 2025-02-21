@@ -1,0 +1,30 @@
+.create-doctor-profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  .create-doctor-profile-container .card-header {
+    background-color: #f1f0f0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  
+  .create-doctor-profile-container .form-control {
+    border-radius: 5px;
+  }
+  
+  .create-doctor-profile-container .btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .create-doctor-profile-container .btn-primary:disabled {
+    background-color: #ccc;
+    border-color: #ccc;
+  }
+  

@@ -1,0 +1,43 @@
+<h2 class="text-center my-4">Update Appointment</h2>
+
+<form (ngSubmit)="updateAppointment()" class="container p-4 border rounded shadow-sm bg-light">
+  <div class="mb-3">
+    <label for="appointmentId" class="form-label">Appointment ID:</label>
+    <input id="appointmentId" type="number" class="form-control"
+      [(ngModel)]="appointmentUpdate.appointmentId" name="appointmentId" readonly/>
+  </div>
+
+  <div class="mb-3">
+    <label for="newDate" class="form-label">New Date:</label>
+    <input id="newDate" type="date" class="form-control"
+      [(ngModel)]="appointmentUpdate.newDate" name="newDate"/>
+  </div>
+
+  <div class="mb-3">
+    <label for="newStartTime" class="form-label">New Start Time:</label>
+    <input id="newStartTime" type="time" class="form-control"
+      [(ngModel)]="appointmentUpdate.newStartTime" name="newStartTime"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="newEndTime" class="form-label">New End Time:</label>
+    <input id="newEndTime" type="time" class="form-control"
+      [(ngModel)]="appointmentUpdate.newEndTime" name="newEndTime"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="reason" class="form-label">Reason (Optional):</label>
+    <textarea id="reason" class="form-control" [(ngModel)]="appointmentUpdate.reason" name="reason" rows="3"></textarea>
+  </div>
+
+  <div class="d-grid">
+    <button type="submit" class="btn btn-primary btn-lg">Update Appointment</button>
+  </div>
+
+  <div class="mt-3">
+    <p *ngIf="successMessage" class="alert alert-success">{{ successMessage }}</p>
+    <p *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</p>
+  </div>
+</form>

@@ -1,0 +1,48 @@
+.appointments-container {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.appointment-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+}
+
+.btn {
+  min-width: 100px;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+
+/* .appointments-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .appointment-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+  }
+  
+  .btn-primary {
+    background-color: #6a11cb;
+    border: none;
+  }
+  
+  .btn-danger {
+    background-color: #e63946;
+    border: none;
+  }
+  
+  .btn-success {
+    background-color: #2a9d8f;
+    border: none;
+  }
+   */

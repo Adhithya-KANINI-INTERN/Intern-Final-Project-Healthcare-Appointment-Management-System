@@ -1,0 +1,43 @@
+.reminders-container {
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reminders-container .card-header {
+    background-color: #f8f9fa;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .reminders-container .list-group-item {
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding: 15px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .reminders-container .list-group-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .reminders-container .list-group-item p {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .reminders-container .list-group-item small {
+    display: block;
+    font-size: 0.875rem;
+    color: #6c757d;
+  }
+  
+  .alert-danger {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  

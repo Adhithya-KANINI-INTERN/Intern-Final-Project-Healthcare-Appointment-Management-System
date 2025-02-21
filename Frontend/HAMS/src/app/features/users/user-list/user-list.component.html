@@ -1,0 +1,24 @@
+<div *ngIf="loading">Loading users...</div>
+<div *ngIf="!loading && users.length === 0">No users found.</div>
+<table *ngIf="users.length > 0">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Role</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.userId }}</td>
+      <td>{{ user.fullName }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.role }}</td>
+      <td>
+        <button (click)="deleteUser(user.email)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

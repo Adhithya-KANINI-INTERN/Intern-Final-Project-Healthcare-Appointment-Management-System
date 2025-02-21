@@ -1,0 +1,81 @@
+<div class="appointments-container">
+
+  <h2 class="text-center ">
+    <ng-container [ngSwitch]="userRole">
+      <span *ngSwitchCase="'Admin'">All Appointments</span>
+      <span *ngSwitchCase="'Doctor'">Doctor Appointments</span>
+      <span *ngSwitchCase="'Patient'">Your Appointments</span>
+      <span *ngSwitchDefault>Appointments</span>
+    </ng-container>
+  </h2>
+
+  <!-- <p *ngIf="errorMessage" class="text-danger text-center">{{ errorMessage }}</p> -->
+
+  <!-- Admin Role: Display All Appointments -->
+  <ng-container *ngIf="userRole === 'Admin'">
+    <app-all-appointments></app-all-appointments>
+  </ng-container>
+
+  <!-- Doctor Role: Display Doctor's Appointments -->
+  <ng-container *ngIf="userRole === 'Doctor'">
+    <div *ngIf="appointments.length > 0; else noAppointments">
+      <div *ngFor="let appointment of appointments" class="appointment-card shadow p-3 mb-4">
+        <p><strong>Patient Name:</strong> {{ appointment.patientName }}</p>
+        <p><strong>Date:</strong> {{ appointment.date | date: 'shortDate' }}</p>
+        <p><strong>Time:</strong> {{ appointment.startTime }} - {{ appointment.endTime }}</p>
+        <p><strong>Reason:</strong> {{ appointment.reason }}</p>
+        <p><strong>Status:</strong> {{ appointment.status }}</p>
+
+        <div class="d-flex justify-content-between">
+          <button
+            class="btn btn-success"
+            *ngIf="appointment.status !== 'Completed'"
+            (click)="MarkAppointmentAsCompleted(appointment.appointmentId)"
+          >
+            Mark as Completed
+          </button>
+          <button class="btn btn-danger" (click)="navigateToCancelAppointment(appointment.appointmentId)">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+  <!-- Patient Role: Display Patient's Appointments -->
+  <ng-container *ngIf="userRole === 'Patient'">
+    <div *ngIf="appointments.length > 0; else noAppointments">
+      <div *ngFor="let appointment of appointments" class="appointment-card shadow p-3 mb-4">
+        <p><strong>Doctor Name:</strong> {{ appointment.doctorName }}</p>
+        <p><strong>Date:</strong> {{ appointment.date | date: 'shortDate' }}</p>
+        <p><strong>Time:</strong> {{ appointment.startTime }} - {{ appointment.endTime }}</p>
+        <p><strong>Reason:</strong> {{ appointment.reason }}</p>
+        <p><strong>Status:</strong> {{ appointment.status }}</p>
+
+        <div class="d-flex justify-content-between">
+          <button class="btn btn-primary" (click)="navigateToupdateAppointment(appointment.appointmentId)">
+            Update
+          </button>
+          <button class="btn btn-danger" (click)="navigateToCancelAppointment(appointment.appointmentId)">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <button class="btn btn-success" (click)="navigateToCreateAppointment()">Create Appointment</button>
+    </div>
+  </ng-container>
+
+  <!-- No Appointments Found -->
+  <ng-template #noAppointments>
+    <p class="text-center text-muted">
+      <ng-container [ngSwitch]="userRole">
+        <span *ngSwitchCase="'Doctor'">No appointments assigned.</span>
+        <span *ngSwitchCase="'Patient'">No appointments found. Create one now!</span>
+        <span *ngSwitchDefault>No appointments found.</span>
+      </ng-container>
+    </p>
+  </ng-template>
+</div>

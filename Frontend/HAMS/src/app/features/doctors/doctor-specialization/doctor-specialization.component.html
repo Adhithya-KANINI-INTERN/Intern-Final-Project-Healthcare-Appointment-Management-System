@@ -1,0 +1,46 @@
+<div class="card doctor-specialization-container">
+  <div class="card-header text-center">
+    <h2>Doctor Specialization</h2>
+  </div>
+  <div class="card-body">
+    <div class="specialization-options text-center mb-3">
+      <button class="btn btn-primary m-2" (click)="fetchDoctors('ENT')">ENT</button>
+      <button class="btn btn-primary m-2" (click)="fetchDoctors('Ortho')">Ortho</button>
+      <button class="btn btn-secondary m-2" (click)="fetchDoctors('')">All</button>
+    </div>
+    <div class="scroll-container">
+      <ul *ngIf="doctors.length > 0; else noDoctors" class="list-group">
+        <li *ngFor="let doctor of doctors" class="list-group-item">
+          <p><strong>Doctor Name:</strong> {{ doctor.doctorName }}</p>
+          <p><strong>Specialization:</strong> {{ doctor.specialization }}</p>
+          <p><strong>Years of Experience:</strong> {{ doctor.yearsOfExperience }}</p>
+        </li>
+      </ul>
+    </div>
+    <ng-template #noDoctors>
+      <p class="text-center text-muted mt-3">No doctors found.</p>
+    </ng-template>
+  </div>
+</div>
+
+
+
+<!-- <div class="doctor-specialization-container">
+  <h2 class="text-center">Doctor Specialization</h2>
+
+  <div class="specialization-options text-center">
+    <button class="btn btn-primary m-2" (click)="fetchDoctors('ENT')">ENT</button>
+    <button class="btn btn-primary m-2" (click)="fetchDoctors('Ortho')">Ortho</button>
+    <button class="btn btn-secondary m-2" (click)="fetchDoctors('')">All</button>
+  </div>
+
+  <ul class="list-group mt-3">
+    <li *ngFor="let doctor of doctors" class="list-group-item">
+      <strong>{{ doctor.doctorName }}</strong> <br>
+      <small><strong>Specialization: </strong> {{ doctor.specialization }}</small><br>
+      <small><strong>Years of Experience:</strong> {{ doctor.yearsOfExperience }}</small>
+    </li>
+  </ul>
+
+  <p *ngIf="doctors.length === 0" class="text-center text-muted mt-3">No doctors found.</p>
+</div> -->

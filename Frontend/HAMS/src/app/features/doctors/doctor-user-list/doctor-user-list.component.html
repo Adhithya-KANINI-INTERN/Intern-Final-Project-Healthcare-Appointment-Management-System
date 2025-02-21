@@ -1,0 +1,41 @@
+<div class="card doctor-list-container">
+  <div class="card-header text-center">
+    <h2>Doctor Users List</h2>
+  </div>
+  <div class="card-body">
+    <p *ngIf="errorMessage" class="text-danger text-center">{{ errorMessage }}</p>
+    <div class="scroll-container">
+      <ul *ngIf="doctors.length > 0; else noDoctors" class="list-group">
+        <li *ngFor="let doctor of doctors" class="list-group-item">
+          <p><strong>Username: </strong>{{ doctor.fullName }}</p>
+          <p><strong>Email:</strong> {{ doctor.email }}</p>
+          <p><strong>Created At:</strong> {{ doctor.createdAt | date: 'short' }}</p>
+        </li>
+      </ul>
+    </div>
+    <ng-template #noDoctors>
+      <p class="text-center text-muted">No doctors found.</p>
+    </ng-template>
+  </div>
+</div>
+
+
+
+<!-- <div class="doctor-list-container">
+    <h2 class="text-center">Doctor Users List</h2>
+  
+    <p *ngIf="errorMessage" class="text-danger text-center">{{ errorMessage }}</p>
+  
+    <ul *ngIf="doctors.length > 0; else noDoctors" class="list-group">
+      <li *ngFor="let doctor of doctors" class="list-group-item">
+        <h5>{{ doctor.fullName }}</h5>       
+        <p><strong>Email:</strong> {{ doctor.email }}</p>
+        <p><strong>Created At:</strong> {{ doctor.createdAt | date: 'short' }}</p>
+      </li>
+    </ul>
+  
+    <ng-template #noDoctors>
+      <p class="text-center text-muted">No doctors found.</p>
+    </ng-template>
+  </div> -->
+

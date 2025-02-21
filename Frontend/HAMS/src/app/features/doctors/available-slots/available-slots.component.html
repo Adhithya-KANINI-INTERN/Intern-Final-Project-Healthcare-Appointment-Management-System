@@ -1,0 +1,35 @@
+<div class="container my-4">
+    <h2 class="text-center mb-4">Available Slots</h2>
+  
+
+    <div class="mb-4 " >
+      <label for="appointmentDate" class="form-label">Select Appointment Date:</label>
+      <input type="date" class="form-control" id="appointmentDate"
+        [(ngModel)]="selectedDate" (change)="onDateChange()"/>
+    </div>
+  
+    <div *ngIf="isLoading" class="text-center my-4">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  
+
+    <div *ngIf="doctorSlots.length > 0" class="row">
+      <div *ngFor="let slot of doctorSlots" class="col-md-4 col-sm-6 mb-3">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Time: {{ slot.slotStartTime }} - {{ slot.slotEndTime }}</h5>
+            <p class="card-text">
+              <strong>Slot Status:</strong> {{ slot.isAvailable ? 'Available' : 'Booked' }}
+            </p>
+          </div>
+        </div>
+      </div> 
+    </div>
+  
+    <div *ngIf="!isLoading && doctorSlots.length === 0" class="text-center">
+      <p>No slots available for the selected date.</p>
+    </div>
+  </div>
+  

@@ -1,0 +1,76 @@
+<!-- <div class="doctor-page">
+
+    <div  *ngIf="userRole==='Admin'">
+      <app-doctor-user-list></app-doctor-user-list>
+    </div>
+
+    <div>
+      <app-doctor-list></app-doctor-list>
+    </div>
+  
+    <ng-template *ngIf="userRole==='Doctor'">
+      <app-doctor-profile></app-doctor-profile>
+    </ng-template>
+
+      <app-doctor-specialization></app-doctor-specialization>
+    
+</div> -->
+
+<h2 class="text-center p-3">Doctors</h2>
+<div class=" doctor-page">
+  
+  <ng-template *ngIf="userRole==='Doctor'">
+    <app-doctor-profile></app-doctor-profile>
+  </ng-template>
+
+
+  <!-- Search and Filter -->
+  <div class="search-filter-container">
+    <input type="text" class="form-control search-input" placeholder="Search doctors..." 
+      [(ngModel)]="searchQuery" (input)="onSearch()" />
+
+    <select class="form-control filter-select" [(ngModel)]="selectedSpecialization" (change)="onFilter()">
+      <option value=""><i class="bi bi-caret-down-fill"></i>All Specializations </option>
+      <option *ngFor="let spec of specializations" [value]="spec">{{ spec }}</option>
+    </select>
+  </div>
+  
+  <!-- Doctors List -->
+  <div class="card">
+    <div class=" card-body doctor-list">
+      <ul *ngIf="filteredDoctors.length > 0; else noDoctors" class="list-group">
+        <li *ngFor="let doctor of filteredDoctors" class="list-group-item">
+          <div class="doctor-info">
+            <p><strong>Name:</strong> {{ doctor.doctorName }}</p>
+            <p><strong>Specialization:</strong> {{ doctor.specialization }}</p>
+            <p><strong>Years of Experience:</strong> {{ doctor.yearsOfExperience }}</p>
+          </div>
+          <button *ngIf="userRole==='Admin'" class="btn info-button bg-light" (click)="viewDoctorUser(doctor)">
+            <i class="bi bi-info-circle"></i> View Info
+          </button>
+  
+          <!-- Doctor User Info Card -->
+          <div *ngIf="selectedDoctorUser && selectedDoctor?.doctorId === doctor.doctorId" class="user-info-card" style="top: 85px; left: 510px">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title mb-0">{{ selectedDoctorUser.fullName }}</h5>
+                <button class="close-icon" (click)="closeUserInfo()">&#10005;</button>
+              </div>
+              <div class="card-body">
+                <p><strong>UserId:</strong> {{ selectedDoctorUser.userId }}</p>
+                <p><strong>Email:</strong> {{ selectedDoctorUser.email }}</p>
+                <p><strong>Created At:</strong> {{ selectedDoctorUser.createdAt | date: 'short' }}</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+
+  <ng-template #noDoctors>
+    <p class="text-center text-muted">No doctors found.</p>
+  </ng-template>
+</div>
+

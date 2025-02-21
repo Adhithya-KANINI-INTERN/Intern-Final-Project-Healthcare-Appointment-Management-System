@@ -1,0 +1,22 @@
+<div class="card notification-container">
+  <div class="card-header text-center">
+    <h2>Notifications</h2>
+  </div>
+  <div class="card-body">
+    <ul class="list-group">
+      <li *ngFor="let notification of notifications"
+        class="list-group-item d-flex justify-content-between align-items-center"
+        [class.unread]="!notification.isRead">
+        <div class="notification-content">
+          <p class="mb-1">{{ notification.message }}</p>
+          <small class="text-muted">{{ notification.createdAt | date: 'medium' }}</small>
+        </div>
+        <button *ngIf="!notification.isRead" class="btn btn-sm btn-outline-primary"
+          (click)="markAsRead(notification.notificationId)">
+          Mark as Read
+        </button>
+      </li>
+    </ul>
+    <p *ngIf="notifications.length === 0" class="text-center text-muted mt-3"> No notifications available.</p>
+  </div>
+</div>

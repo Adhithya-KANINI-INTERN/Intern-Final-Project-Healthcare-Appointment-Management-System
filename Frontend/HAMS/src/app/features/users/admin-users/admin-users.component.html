@@ -1,0 +1,56 @@
+<div class="container my-4">
+  <h2 class="text-center">User Management</h2>
+
+  <div class="mb-4 search-container">
+    <input
+        type="text"
+        class="form-control w-75 mx-auto"
+        placeholder="Search by Full Name"
+        [(ngModel)]="searchText"
+        (input)="filterUsersByName()"
+      />
+  </div>
+
+  <div class=" mb-4">
+    <!-- <div class="card-header text-center">
+      <h3>User Roles</h3>
+    </div> -->
+    <div class=" text-center">
+      <button class="btn btn-primary m-2" (click)="fetchUsersByRole('Admin')">Admin</button>
+      <button class="btn btn-primary m-2" (click)="fetchUsersByRole('Doctor')">Doctor</button>
+      <button class="btn btn-primary m-2"(click)="fetchUsersByRole('Patient')">Patient</button>
+      <button class="btn btn-primary m-2" (click)="fetchAllUsers()">All</button>
+    </div>
+  </div>
+
+
+  <div *ngIf="errorMessage" class="alert alert-danger text-center">
+    {{ errorMessage }}
+  </div>
+
+
+  <div *ngIf="successMessage" class="alert alert-success text-center">
+    {{ successMessage }}
+  </div>
+
+
+  <div *ngIf="users.length > 0" class="row">
+    <div class="col-lg-4 col-md-6 mb-4" *ngFor="let user of users">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">{{ user.fullName }}</h5>
+          <p class="card-text"><strong>Email:</strong> {{ user.email }}</p>
+          <p class="card-text"><strong>Role:</strong> {{ user.role }}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <button class="btn btn-info btn-sm" (click)="navigateToUpdate(user)">Update</button>
+          <button class="btn btn-danger btn-sm" (click)="fetchDeleteUser(user)">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="users.length === 0 && !errorMessage" class="text-center">
+    <p>No users found.</p>
+  </div>
+</div>

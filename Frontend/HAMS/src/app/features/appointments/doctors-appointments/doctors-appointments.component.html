@@ -1,0 +1,42 @@
+<div class="appointments-container">
+    <h2>Doctor's Appointments</h2>
+  
+    <!-- Error Message -->
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+  
+    <!-- Appointments Table -->
+    <table *ngIf="appointments.length > 0" class="appointments-table">
+      <thead>
+        <tr>
+          <th>Appointment ID</th>
+          <th>Patient ID</th>
+          <th>Doctor Name</th>
+          <th>Date</th>
+          <th>Start Time</th>
+          <th>End Time</th>
+          <th>Status</th>
+          <th>Reason</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let appointment of appointments">
+          <td>{{ appointment.appointmentId }}</td>
+          <td>{{ appointment.patientId }}</td>
+          <td>{{ appointment.doctorName }}</td>
+          <td>{{ appointment.date }}</td>
+          <td>{{ appointment.startTime }}</td>
+          <td>{{ appointment.endTime }}</td>
+          <td>{{ appointment.status }}</td>
+          <td>{{ appointment.reason }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <!-- No Appointments Message -->
+    <div *ngIf="appointments.length === 0 && !errorMessage" class="no-appointments">
+      <p>No appointments found.</p>
+    </div>
+  </div>
+  

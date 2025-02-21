@@ -1,0 +1,51 @@
+<div class="container d-flex align-items-center justify-content-center vh-100">
+    <div
+      class="card border-0 shadow-lg p-4"
+      style="max-width: 600px; width: 100%; border-radius: 10px;"
+    >
+      <div class="card-body">
+        <h2 class="text-center mb-4">Manage Availability</h2>
+        <p class="text-center text-muted mb-4">
+          Set your availability and manage your schedule effortlessly!
+        </p>
+        <form [formGroup]="availabilityForm" (ngSubmit)="submitAvailability()">
+          <div class="mb-3">
+            <label for="date" class="form-label">Date</label>
+            <input type="date" id="date" formControlName="date" class="form-control" required/>
+          </div>
+  
+          <div class="mb-3">
+            <label for="dayOfWeek" class="form-label">Day of the Week</label>
+            <input type="text" id="dayOfWeek" formControlName="dayOfWeek" class="form-control" placeholder="E.g., Monday" required/>
+          </div>
+  
+          <div class="row g-3">
+            <div class="col">
+              <label for="startTime" class="form-label">Start Time</label>
+              <input type="time" id="startTime" formControlName="startTime" class="form-control" required/>
+            </div>
+            <div class="col">
+              <label for="endTime" class="form-label">End Time</label>
+              <input type="time" id="endTime" formControlName="endTime" class="form-control" required/>
+            </div>
+          </div>
+  
+          <div class="mb-3">
+            <label for="slotDurationMinutes" class="form-label">Slot Duration (Minutes)</label>
+            <input type="number" id="slotDurationMinutes" formControlName="slotDurationMinutes" class="form-control text-center" 
+            placeholder="Enter duration in minutes" min="1" required/>
+          </div>
+  
+          <p *ngIf="!successMessage && errorMessage" class="text-danger text-center">{{ errorMessage }}</p>
+
+          <p *ngIf="successMessage" class="text-success text-center">{{ successMessage }}</p>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+

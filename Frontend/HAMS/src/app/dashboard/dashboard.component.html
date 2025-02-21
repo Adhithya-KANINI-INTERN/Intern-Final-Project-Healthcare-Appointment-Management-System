@@ -1,0 +1,131 @@
+<div class="dashboard-container">
+  <h1 class="mb-4 fw-bold">Hi {{ userName }},</h1>
+
+  <!-- Count Blocks Section -->
+  <div *ngIf="userRole === 'Admin'" class="row g-4">
+    <div class="col-md-3">
+      <div class="stat-card text-dark text-center ">
+        <h4>Total Users</h4>
+        <p class="stat-number">{{ totalUsers || 'Loading...' }}</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="stat-card text-dark text-center ">
+        <h4>Total Doctors</h4>
+        <p class="stat-number">{{ totalDoctors || 'Loading...' }}</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="stat-card text-dark text-center ">
+        <h4>Total Patients</h4>
+        <p class="stat-number">{{ totalPatients || 'Loading...' }}</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="stat-card text-dark text-center ">
+        <h4>Total Appointments</h4>
+        <p class="stat-number">{{ totalConfirmedAppointments || 'Loading...' }}</p>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+  <!-- Add Doctor Profile -->
+   
+  <!-- <div *ngIf="userRole === 'Doctor'">
+    <app-create-doctor-profile></app-create-doctor-profile>
+  </div> -->
+
+  <div *ngIf="userRole === 'Doctor'">
+    <div *ngIf="isLoadingDoctorProfile" class="text-center">
+      <p>Loading profile information...</p>
+    </div>
+    <div *ngIf="!isLoadingDoctorProfile">
+      <app-create-doctor-profile *ngIf="!hasDoctorProfile"></app-create-doctor-profile>
+      <!-- <div *ngIf="hasDoctorProfile" class="text-center">
+        <p>Your profile is already created.</p>
+      </div> -->
+    </div>
+  </div>
+
+  
+
+  <div class="text-center mt-4" *ngIf="userRole === 'Doctor' && hasDoctorProfile">
+    <button class="btn btn-primary" (click)="navigateToManageAvailability()">Manage Availability</button>
+  </div>
+
+  <div *ngIf="userRole === 'Doctor' && hasDoctorProfile">
+    <app-available-slots></app-available-slots>
+  </div>
+
+
+  <div class="text-center mt-4" *ngIf="userRole === 'Patient'">
+    <button class="btn btn-success w-25" (click)="navigateToCreateAppointment()">Create Appointment</button>
+  </div>
+
+  <!-- Appointments Section -->
+  <div class="section mt-5" *ngIf="userRole === 'Doctor' || userRole === 'Patient'">
+    <div class="card shadow-sm">
+      <div class="card-header bg-light text-dark">
+        <h3 class="mb-0">Your Appointments</h3>
+      </div>
+      <div class="card-body">
+        <div *ngIf="isLoadingAppointments; else appointmentsContent">
+          <p class="text-muted">Loading appointments...</p>
+        </div>
+        <ng-template #appointmentsContent>
+          <ul *ngIf="appointments.length > 0; else noAppointments" class="list-group">
+            <li *ngFor="let appointment of appointments" class="list-group-item">
+              <p>
+                <strong>Appointment with </strong>
+                <strong *ngIf="userRole === 'Doctor'">Patient</strong>
+                <strong *ngIf="userRole === 'Patient'">Doctor</strong>: 
+                {{ userRole === 'Doctor' ? appointment.patientName : appointment.doctorName }}
+              </p>
+              <p><strong>Date: </strong>Date: {{ appointment.date | date: 'shortDate' }} &nbsp; <strong>Time:</strong> {{ appointment.startTime }} - {{ appointment.endTime }}</p>
+              <p><strong>Status: </strong><span class="text-success fw-bold">{{ appointment.status }}</span></p>
+            </li>
+          </ul>
+          <ng-template #noAppointments>
+            <p class="text-muted">No appointments scheduled.</p>
+          </ng-template>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pending Verifications Section -->
+  <div class="section mt-5" *ngIf="userRole === 'Admin'">
+    <div class="card shadow-sm">
+      <div class="card-header text-dark">
+        <h3 class="mb-0">Pending Verifications</h3>
+      </div>
+      <div class="card-body">
+        <div *ngIf="isLoadingPendingDoctors; else pendingDoctorsContent">
+          <p class="text-muted">Loading pending verifications...</p>
+        </div>
+        <ng-template #pendingDoctorsContent>
+          <ul *ngIf="pendingDoctors.length > 0; else noPendingDoctors" class="list-group">
+            <li *ngFor="let doctor of pendingDoctors" class="list-group-item d-flex justify-content-between align-items-center">
+              <div>
+                <p>DoctorId: <strong>{{ doctor.doctorId }}</strong></p>
+                <p>Doctor Name: <strong>{{ doctor.doctorName }}</strong></p>
+                <p>Specialization: <strong>{{ doctor.specialization }}</strong></p>
+                <p>Experience: <strong>{{ doctor.yearsOfExperience }} years</strong></p>
+              </div>
+              <div class="button-group-vertical">
+                <button class="btn btn-sm btn-success mb-2" (click)="approveDoctor(doctor.doctorId)">Approve</button>
+                <button class="btn btn-sm btn-danger" (click)="rejectDoctor(doctor.doctorId)">Reject</button>
+              </div>
+            </li>
+          </ul>
+          <ng-template #noPendingDoctors>
+            <p class="text-muted">No pending verifications.</p>
+          </ng-template>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>

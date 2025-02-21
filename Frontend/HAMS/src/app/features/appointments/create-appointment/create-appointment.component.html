@@ -1,0 +1,42 @@
+<h2 class="text-center my-4">Create Appointment</h2>
+
+<form (ngSubmit)="createAppointment()" class="container p-4 border rounded shadow-sm bg-light" >
+  <div class="mb-3">
+    <label for="doctor" class="form-label">Doctor:</label>
+    <select id="doctor" class="form-select"
+      [(ngModel)]="appointment.doctorId" name="doctorId" required (change)="fetchAvailableSlots()">
+      <option *ngFor="let doctor of doctors" [value]="doctor.doctorId">{{ doctor.doctorName }} ({{ doctor.specialization }})</option>
+    </select>
+  </div>
+
+  <div class="mb-3">
+    <label for="date" class="form-label">Date:</label>
+    <input id="date" type="date" class="form-control" [(ngModel)]="appointment.date" name="date" required (change)="fetchAvailableSlots()"/>
+  </div>
+
+
+  <div class="mb-3">
+    <label for="slot" class="form-label">Available Slots:</label>
+    <select id="slot" class="form-select"
+      [(ngModel)]="selectedSlot" name="slot" required (change)="onSlotChange()">
+      <option *ngFor="let slot of availableSlots" [ngValue]="slot">{{ slot.slotStartTime }} - {{ slot.slotEndTime }}</option>
+    </select>
+  </div>
+
+
+  <div class="mb-3">
+    <label for="reason" class="form-label">Reason:</label>
+    <textarea id="reason" class="form-control" [(ngModel)]="appointment.reason" name="reason" rows="3" required></textarea>
+  </div>
+
+
+  <div class="d-grid">
+    <button type="submit" class="btn btn-primary btn-lg">Create Appointment</button>
+  </div>
+
+
+  <div class="mt-3">
+    <p *ngIf="successMessage" class="alert alert-success">{{ successMessage }}</p>
+    <p *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</p>
+  </div>
+</form>

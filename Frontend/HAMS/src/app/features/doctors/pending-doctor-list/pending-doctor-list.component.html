@@ -1,0 +1,32 @@
+<div class="pending-doctor-list">
+    <h2>Pending Doctor List</h2>
+  
+    <div *ngIf="loading" class="loading">
+      Loading pending doctors...
+    </div>
+  
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+  
+    <div *ngIf="!loading && pendingDoctors.length === 0" class="no-doctors">
+      No pending doctors found.
+    </div>
+  
+    <ul *ngIf="!loading && pendingDoctors.length > 0" class="doctor-list">
+      <li *ngFor="let doctor of pendingDoctors" class="doctor-item">
+        <div class="doctor-info">
+          <p><strong>Name:</strong> {{ doctor.doctorName }}</p>
+          <p><strong>Specialization:</strong> {{ doctor.specialization }}</p>
+          <p><strong>Years of Experience:</strong> {{ doctor.yearsOfExperience }}</p>
+        </div>
+        <button (click)="approveDoctor(doctor.doctorId)" class="approve-button">
+          Approve
+        </button>
+        <button (click)="rejectDoctor(doctor.doctorId)" class="reject-button">
+          Reject
+        </button>
+      </li>
+    </ul>
+  </div>
+  

@@ -1,0 +1,44 @@
+<header *ngIf="!hideNavandFooter" class="bg-primary">
+  <nav>
+    <ul class="nav-left">
+      <li>
+        <a routerLink="/dashboard" routerLinkActive="active-link"><i class="bi bi-house-door"></i> Dashboard</a>
+      </li>
+      <li>
+        <a routerLink="/appointment" routerLinkActive="active-link">Appointment</a>
+      </li>
+      <li>
+        <a routerLink="/doctor" routerLinkActive="active-link">Doctors</a>
+      </li>
+      <li>
+        <a routerLink="/users" *ngIf="userRole==='Admin'" routerLinkActive="active-link">Users</a>
+      </li>
+    </ul>
+
+    <div class="nav-space"></div>
+
+    <ul class="nav-right">
+      <li>
+        <a routerLink="/notifications" routerLinkActive="active-link"><i class="bi bi-chat-right-text"></i></a>
+      </li>
+      <li>
+        <a routerLink="/reminders" routerLinkActive="active-link"><i class="bi bi-bell"></i></a>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown-toggle"><i class="bi bi-person"></i> {{ this.username }}</a>
+        <div class="dropdown-menu">
+          <a routerLink="/userprofile">Profile</a>
+          <a href="" (click)="logout()" class="logout-link">Logout &nbsp;&nbsp; <i class="bi bi-box-arrow-right"></i></a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer *ngIf="!hideNavandFooter" class=" bg-light text-center py-2 ">
+  <p>&copy; 2024 Healthcare Appointment Management System</p>
+</footer>

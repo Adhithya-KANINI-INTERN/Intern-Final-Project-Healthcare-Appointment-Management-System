@@ -1,0 +1,78 @@
+<div class="card doctor-list-container">
+  <div class="card-header text-center">
+    <h2>Doctors List</h2>
+  </div>
+  <div class="card-body">
+    <div class="search-container text-center mb-4">
+      <input
+        type="text"
+        class="form-control w-75 mx-auto"
+        placeholder="Search doctors..."
+        [(ngModel)]="searchQuery"
+        (input)="onSearch()"
+      />
+    </div>
+    <p *ngIf="errorMessage" class="text-danger text-center">{{ errorMessage }}</p>
+    <div class="scroll-container">
+      <ul *ngIf="filteredDoctors.length > 0; else noDoctors" class="list-group">
+        <li *ngFor="let doctor of filteredDoctors" class="list-group-item">
+          <span class="badge status-badge">{{doctor.verificationStatus}}</span>
+          <p><strong>Doctor Name: </strong>{{ doctor.doctorName }}</p>
+          <p><strong>Specialization:</strong> {{ doctor.specialization }}</p>
+          <p><strong>Years of Experience:</strong> {{ doctor.yearsOfExperience }}</p>
+        </li>
+      </ul>
+    </div>
+    <ng-template #noDoctors>
+      <p class="text-center text-muted">No doctors found.</p>
+    </ng-template>
+  </div>
+</div>
+
+
+
+<!-- <div class="doctor-list-container">
+  <h2 class="text-center">Doctors List</h2>
+
+  <div class="search-container text-center mb-4">
+    <input 
+      type="text" 
+      class="form-control w-50 mx-auto" 
+      placeholder="Search doctors..." 
+      [(ngModel)]="searchQuery" 
+      (input)="onSearch()" />
+  </div>
+
+  <p *ngIf="errorMessage" class="text-danger text-center">{{ errorMessage }}</p>
+
+  <ul *ngIf="filteredDoctors.length > 0; else noDoctors" class="list-group">
+    <li *ngFor="let doctor of filteredDoctors" class="list-group-item">
+      <h5><strong>Doctor Name: </strong>{{ doctor.doctorName }}</h5>   <p><strong>{{doctor.verificationStatus}}</strong></p>
+      <p><strong>Specialization</strong> {{ doctor.specialization}}</p>
+      <p><strong>Years Of Experience</strong> {{ doctor.yearsOfExperience}}</p>
+    </li>
+  </ul>
+
+  <ng-template #noDoctors>
+    <p class="text-center text-muted">No doctors found.</p>
+  </ng-template>
+
+  <div *ngIf="filteredDoctors.length > 3" class="scroll-container mt-3">
+    <ul class="list-group">
+      <li *ngFor="let doctor of filteredDoctors.slice(0, 3)" class="list-group-item">
+        <h5>{{ doctor.doctorName }}</h5>
+        <p><strong>Specialization</strong> {{ doctor.specialization}}</p>
+        <p><strong>Years Of Experience</strong> {{ doctor.yearsOfExperience}}</p>
+      </li>
+    </ul>
+    <div class="scroll-box">
+      <ul class="list-group">
+        <li *ngFor="let doctor of filteredDoctors.slice(3)" class="list-group-item">
+          <h5>{{ doctor.doctorName }}</h5>
+          <p><strong>Specialization</strong> {{ doctor.specialization}}</p>
+          <p><strong>Years Of Experience</strong> {{ doctor.yearsOfExperience}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div> -->

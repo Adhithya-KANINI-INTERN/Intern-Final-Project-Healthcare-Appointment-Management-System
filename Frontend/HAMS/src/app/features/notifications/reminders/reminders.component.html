@@ -1,0 +1,21 @@
+<div class="card reminders-container">
+  <div class="card-header text-center">
+    <h2>Upcoming Reminders</h2>
+  </div>
+  <div class="card-body">
+    <div *ngIf="errorMessage" class="alert alert-danger text-center">
+      <p class="mb-0">{{ errorMessage }}</p>
+    </div>
+    <ul *ngIf="!errorMessage && reminders.length > 0" class="list-group">
+      <li *ngFor="let reminder of reminders" class="list-group-item d-flex justify-content-between align-items-center">
+        <div>
+          <p class="mb-1">{{ reminder.message }}</p>
+          <small class="text-muted">{{ reminder.createdAt | date: 'medium' }}</small>
+        </div>
+      </li>
+    </ul>
+    <p *ngIf="reminders.length === 0 && !errorMessage" class="text-center text-muted mt-3">
+      No upcoming reminders.
+    </p>
+  </div>
+</div>
